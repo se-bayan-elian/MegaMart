@@ -1,0 +1,254 @@
+.cart {
+  width: 30%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  background-color: #fff;
+  overflow-y: auto;
+  z-index: 99999999;
+  box-shadow: -2px 0px 3px 0.2px rgba($color: #000000, $alpha: 0.2);
+
+  .carts-header {
+    height: 15%;
+    padding: 0 18px;
+    background-color: #f7f7f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.4px 2px 1px rgba($color: #000000, $alpha: 0.2);
+
+    h1 {
+      font-size: 24px;
+    }
+
+    button {
+      background-color: transparent;
+      border: 0;
+      &:hover{
+        svg{
+          color: rgb(195, 3, 3);
+        }
+      }
+      svg {
+        font-size: 24px;
+        transition: 0.3s;
+      }
+
+    }
+
+  }
+
+  .body {
+    height: 60%;
+    overflow-y: auto;
+    margin-bottom: 2%;
+    .empty-cart  {
+      flex-direction: column;
+      gap: 15px;
+      .inner{
+        svg {
+          display: block;
+          font-size: 100px;
+          margin: 0px auto 20px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 200;
+        text-align: center;
+      }
+    }
+    .empty-cart,.loader{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .cart-element {
+      padding: 10px 15px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+
+      .cart-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .info {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          h1 {
+            font-size: 20px;
+          }
+
+          img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+          }
+        }
+
+        button {
+          background-color: #fceae8;
+          border: 0;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            color: #9e2215;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .cart-body {
+        >div {
+          align-items: center;
+
+          .quantity {
+            height: 52px;
+            width: 30%;
+            padding: 10px 8px;
+            border: 1px solid #e3e6e8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.4s;
+
+            button {
+              width: 25px;
+              height: 25px;
+              border: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              cursor: pointer;
+              background-color: #e7f6fe;
+              color: #133986;
+              font-size: 20px;
+              transition: 0.2s;
+
+              &:hover {
+                background-color: #d4eefd;
+
+              }
+
+              span {
+                margin-bottom: 4px;
+              }
+            }
+
+            &:hover {
+              border-color: #0aa7f5;
+            }
+          }
+
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .do-pay {
+    max-height:20%;
+    box-shadow: 0 -0.4px 2px 0.2px rgba($color: #000000, $alpha: 0.2);
+
+    p {
+      font-size: 16px;
+      font-weight: 100;
+    }
+
+    .price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3%;
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    button {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+.cart.hidden {
+  animation: slide-hide 1s forwards;
+}
+.cart.show{
+  animation: slide-show 0.5s forwards;
+
+}
+
+@keyframes slide-hide {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+@keyframes slide-show {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}
+
+@media (min-width :768px)and (max-width : 1199px) {
+  .cart {
+    width: 50%;
+
+    .cart-element {
+      transform: scale(0.9);
+      img{
+        transform: scale(0.8);
+      }
+    }
+
+    .do-pay {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width :320px)and (max-width : 767px) {
+  .cart {
+    width: 100%;
+
+    .cart-element {
+      transform: scale(0.9);
+    }
+
+    .do-pay {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

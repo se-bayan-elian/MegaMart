@@ -1,0 +1,60 @@
+.contact .logo {
+  margin-bottom: 20px;
+}
+.contact .Contact-info h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.contact .Contact-info ul {
+  padding: 0;
+}
+.contact .Contact-info ul li {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.contact .Contact-info ul li img {
+  width: 21px;
+  height: 21px;
+}
+.contact .Contact-info ul li .content h6 {
+  margin-bottom: 3px;
+  color: #fff;
+}
+.contact .Contact-info ul li .content a {
+  color: #fff;
+  text-decoration: none;
+}
+.contact .download-info h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.contact .download-info .ways {
+  display: flex;
+  gap: 15px;
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .contact {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 991px) {
+  .contact {
+    transform: scale(0.9);
+    text-align: center;
+  }
+  .contact .contact-ways li {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact .contact-ways li img {
+    margin: auto;
+  }
+  .contact .download-info .ways {
+    gap: 0px !important;
+  }
+  .contact .download-info img {
+    transform: scale(0.8);
+  }
+}

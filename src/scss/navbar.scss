@@ -1,0 +1,82 @@
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0px 2px 20px -15px #008ECC; 
+  .main-search-input {
+    width: 30%;
+    .input-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      border: 1px solid #ced4da;
+      background-color: #F3F9FB;
+      border-radius: 7px;
+      &:focus-within{
+        box-shadow: 0 0 0 0.15rem rgba($color: #008ECC, $alpha: 0.2);
+      }
+      
+      input {
+        width: 92%; 
+        background-color: transparent;
+        border: 0;
+        &:focus{
+          border: 0;
+          box-shadow: none;
+        }
+      }
+      svg {
+        border: 0;
+        left: 8px;
+        color: #008ECC;
+      }
+    }
+  }
+
+
+}
+.right{
+  display: flex;
+  align-items: center;
+.cart-icon-container {
+  margin-right: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  svg {
+    font-size: 22px;
+    color: #008ECC;
+  }
+
+  >span {
+    font-size: 16px;
+
+    span {
+      color: #008ECC;
+    }
+  }
+}
+}
+
+.navbar-toggler {
+  border: 0;
+
+  &:focus {
+    box-shadow: 0;
+  }
+
+  .navbar-toggler-icon {
+    color: #008ECC;
+  }
+}
+
+@media (max-width : 991px) {
+  .navbar {
+    .main-search-input {
+      width: 100% !important;
+      margin-bottom: 20px;
+    }
+
+  }
+}

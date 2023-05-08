@@ -1,0 +1,40 @@
+.hyper-links {
+  width: 25%;
+  color: white;
+}
+.hyper-links h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+.hyper-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: disc;
+  color: white;
+  padding: 0 !important;
+  list-style-position: inside;
+}
+.hyper-links ul li {
+  transition: 0.3s;
+}
+.hyper-links ul li:hover {
+  padding-left: 10px;
+}
+.hyper-links ul li:hover a {
+  color: lightsteelblue;
+}
+.hyper-links ul li a {
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .hyper-links {
+    text-align: center;
+    width: 100%;
+  }
+  .hyper-links ul {
+    list-style-type: none !important;
+  }
+}

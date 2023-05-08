@@ -1,0 +1,105 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "smartphones",
+      "image": "https://m-cdn.phonearena.com/images/article/64576-wide-two_1200/The-Best-Phones-to-buy-in-2023---our-top-10-list.jpg"
+    },
+    {
+      "id": 2,
+      "name": "laptops",
+      "image": "https://i.rtings.com/assets/pages/IxCXzynA/apple-laptop-lineup-20220825-3-medium.jpg"
+    },
+    {
+      "id": 3,
+      "name": "fragrances",
+      "image": "https://static1.michael84.co.uk/wp-content/uploads/best-summer-fragrances-michael84-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "skincare",
+      "image": "https://media.allure.com/photos/624216e621ec9ca38ac6a112/3:2/w_4167,h_2778,c_limit/0325-dermskin.png"
+    },
+    {
+      "id": 5,
+      "name": "groceries",
+      "image": "https://www.bankrate.com/2020/08/01170557/How-to-save-money-on-groceries.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "home-decoration",
+      "image": "https://media.designcafe.com/wp-content/uploads/2022/09/19152202/luxury-home-decor.jpg"
+    },
+    {
+      "id": 7,
+      "name": "furniture",
+      "image": "https://cdn-eu.dynamicyield.com/api/9877108/images/24d111bf06dd1__furniture.jpg"
+    },
+    {
+      "id": 8,
+      "name": "tops",
+      "image": "https://lp2.hm.com/hmgoepprod?set=source[/32/58/3258b99378e9bf80c18eeca6d2b6458909b98965.jpg],origin[dam],category[kids_boys_clothing_tshirtsshirts_tshirts],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]"
+    },
+    {
+      "id": 9,
+      "name": "womens-dresses",
+      "image": "https://media.istockphoto.com/id/935032524/photo/women-summer-dresses-on-display-at-camden-market.jpg?s=612x612&w=0&k=20&c=_L2DC3Fq4wST3v9fsonpJzARWpMibAVtWUkZXPrQALs="
+    },
+    {
+      "id": 10,
+      "name": "womens-shoes",
+      "image": "https://www.angelalarcon.com/themes/b2calarcon/assets/img/modules/appagebuilder/images/zapatos-primavera-verano-ss23-movil.jpg"
+    },
+    {
+      "id": 11,
+      "name": "mens-shirts",
+      "image": "https://sc04.alicdn.com/kf/Hbb68d1970fe746ef8afee342fdef358cs.jpg"
+    },
+    {
+      "id": 12,
+      "name": "mens-shoes",
+      "image": "https://www.retaildoc.com/hubfs/Shoes.webp"
+    },
+    {
+      "id": 13,
+      "name": "mens-watches",
+      "image": "https://watchcentre.pk/wp-content/uploads/2022/06/casio-watches-mens-category-banner-650.webp"
+    },
+    {
+      "id": 14,
+      "name": "womens-watches",
+      "image": "https://thumbs.dreamstime.com/b/luxury-watches-store-women-s-140694922.jpg"
+    },
+    
+    {
+      "id": 15,
+      "name": "womens-bags",
+      "image": "https://thumbs.dreamstime.com/b/store-showcase-various-womens-bags-antalya-turkey-handbags-sale-210792614.jpg"
+    },
+    {
+      "id": 16,
+      "name": "womens-jewellery",
+      "image": "https://media.4rgos.it/i/Argos/sb-3122-m007-25-01-9607648_C2?maxW=768&qlt=75&fmt.jpeg.interlaced=true"
+    },
+    {
+      "id": 17,
+      "name": "sunglasses",
+      "image": "https://media.blogto.com/articles/bestofrankedlistings/opticianado-toronto-e174db9d.jpg?w=720&cmd=resize_then_crop&height=480&quality=70"
+    },
+    {
+      "id": 18,
+      "name": "automotive",
+      "image": "https://previews.123rf.com/images/urfingus/urfingus1603/urfingus160300417/54742902-concept-of-auto-parts-shopping-many-auto-parts-near-shopping-trolley-isolated-on-a-white-background.jpg"
+    },
+    {
+      "id": 19,
+      "name": "motorcycle",
+      "image": "https://www.webbikeworld.com/wp-content/uploads/2022/03/WebBikeWorld-best-touring-motorcycles-2022-1176x588.jpg"
+    },
+    {
+      "id": 20,
+      "name": "lighting",
+      "image": "https://www.bravobusinessmedia.com/wp-content/uploads/2019/12/lighting-store.jpg"
+    }
+  ]
+}

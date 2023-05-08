@@ -1,0 +1,78 @@
+.products-sec {
+  padding-top: 40px;
+  min-height: calc(100vh - 540px);
+  .container {
+    .product-container{
+      padding: 5px !important;
+      
+    }
+    .msg{
+      margin-bottom: 30px;
+      .error-icon{
+        display: block;
+        font-size: 60px;
+        color: firebrick;
+        margin: 0 auto 20px;
+
+      }
+      h1{
+        text-align: center;
+        font-size: 30px;
+        color: #ccc;
+      }
+    }
+    .product {
+      margin-bottom: 20px;
+      height: 95%;
+      .card.loaded-card{
+        box-shadow: 0 0 5px 1px rgba($color: #008ECC, $alpha: 0.1);
+        transition: 1s;
+        .card-img{
+          overflow: hidden;
+        }
+        &:hover{
+          img{
+            transform: scale(1.8) rotate(30deg);
+          }
+            transform: scale(1.06);
+            z-index: 999;
+            box-shadow: 0 0 5px 1px rgba($color: #008ECC, $alpha: 0.3);
+        }
+      img{
+        width: 286px;
+        height: 161px ;
+        object-fit: cover;
+        box-shadow: 0 0 5px 1px rgba($color: #008ECC, $alpha: 0.1);
+        transition: 1s ;
+      }
+      .card-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 70px;
+      }
+     
+    }
+    .card{
+      .img-placeholder{
+       span{
+        height: 161px !important;
+       }
+      }
+    }
+  }
+  
+  }
+}
+@media (max-width : 767px){
+  .products-sec{
+    padding-top: 20px !important;
+  }
+}

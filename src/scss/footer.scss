@@ -1,0 +1,72 @@
+.footer-sec {
+  background-color: #008ECC;
+  padding-top: 70px;
+
+  .container {
+    width: 80%;
+
+    .footer-flex {
+      display: flex;
+      gap: 120px;
+      margin-bottom: 20px;
+
+      a {
+        text-decoration: none;
+      }
+
+      h3 {
+        font-size: 19px;
+      }
+    }
+
+    .rights {
+      p {
+        padding: 20px 0px;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+        border-top: 1px solid #05ABF3;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// responsive design 
+@media (min-width : 991px) and (max-width : 1199px) {
+    .footer-sec{
+      .container{
+        width: 95%;
+        .footer-flex{
+          gap: 40px;
+          .hyper-link{
+            width: 30%;
+          }
+        }
+      }
+    }
+}
+
+@media  (max-width : 991px) {
+  .footer-sec{
+    .container{
+      width: 95%;
+      max-width: 95%;
+      .footer-flex{
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        .hyper-link{
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width : 320px) and (max-width : 767px) {
+
+}

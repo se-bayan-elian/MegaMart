@@ -1,0 +1,80 @@
+.contact{
+  .logo{
+    margin-bottom: 20px;
+  }
+  .Contact-info{
+   
+    h3{
+     color: #fff;
+     margin-bottom: 20px;
+    }
+    ul{
+      padding: 0;
+    li{
+      display: flex;
+      gap: 15px;
+      margin-bottom: 10px;
+      img{
+        width: 21px;
+        height: 21px;
+      }
+      .content{
+        h6{
+          margin-bottom: 3px;
+          color: #fff;
+        }
+        a{
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    }
+  }
+  .download-info{
+    h3{
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .ways{
+      display: flex;
+      gap: 15px;
+    }
+  }
+}
+
+// responsive design 
+@media (min-width : 991px) and (max-width : 1199px) {
+  .contact{
+    transform: scale(0.9);
+  }
+}
+@media  (max-width : 991px) {
+  .contact{
+    transform: scale(0.9);
+    text-align: center;
+    .contact-ways{
+     li{
+      justify-content: center;
+      flex-direction: column;
+      img{
+        margin: auto;
+      }
+     }
+    }
+    .download-info{
+      .ways {
+        gap: 0px  !important;
+        
+      }
+      img{
+        transform: scale(0.8);
+      }
+    }
+  }
+
+}
+@media (min-width : 320px) and (max-width : 767px) {
+
+}

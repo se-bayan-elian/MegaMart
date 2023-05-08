@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0px 2px 20px -15px #008ECC;
+}
+.navbar .main-search-input {
+  width: 30%;
+}
+.navbar .main-search-input .input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  border: 1px solid #ced4da;
+  background-color: #F3F9FB;
+  border-radius: 7px;
+}
+.navbar .main-search-input .input-container:focus-within {
+  box-shadow: 0 0 0 0.15rem rgba(0, 142, 204, 0.2);
+}
+.navbar .main-search-input .input-container input {
+  width: 92%;
+  background-color: transparent;
+  border: 0;
+}
+.navbar .main-search-input .input-container input:focus {
+  border: 0;
+  box-shadow: none;
+}
+.navbar .main-search-input .input-container svg {
+  border: 0;
+  left: 8px;
+  color: #008ECC;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+.right .cart-icon-container {
+  margin-right: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.right .cart-icon-container svg {
+  font-size: 22px;
+  color: #008ECC;
+}
+.right .cart-icon-container > span {
+  font-size: 16px;
+}
+.right .cart-icon-container > span span {
+  color: #008ECC;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: 0;
+}
+.navbar-toggler .navbar-toggler-icon {
+  color: #008ECC;
+}
+
+@media (max-width: 991px) {
+  .navbar .main-search-input {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
