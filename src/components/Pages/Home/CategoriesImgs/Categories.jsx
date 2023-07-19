@@ -9,10 +9,10 @@ const Categories = () => {
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchCategories("http://localhost:9000/categories")).then(() => {
-      setTimeout(()=>{
-        setLoading(true)
-      },1000)
+    dispatch(fetchCategories("/categories")).then(() => {
+      setTimeout(() => {
+        setLoading(true);
+      }, 1000);
     });
   }, [dispatch]);
   return (
@@ -28,7 +28,7 @@ const Categories = () => {
             <Category data={el} />
           ) : (
             <Placeholder as="li" animation="wave" className="w-24.5">
-              <Placeholder xs={12} style={{ height: "100%" }}  bg='secondary' />
+              <Placeholder xs={12} style={{ height: "100%" }} bg="secondary" />
             </Placeholder>
           );
         })}

@@ -14,7 +14,7 @@ const Tabs = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    dispatch(fetchCategories("http//localhost:9000/categories"));
+    dispatch(fetchCategories("/categories"));
     setIsDisabled(false);
     setIsLoading(false);
   }, []);
