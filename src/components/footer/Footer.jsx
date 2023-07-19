@@ -13,7 +13,7 @@ const Footer = () => {
   let categories = useSelector(state => state.categories);
   const dispatch = useDispatch()
   useEffect(()=>{
-    dispatch(fetchCategories('http://localhost:9000/categories'))
+    dispatch(fetchCategories('/categories'))
   },[])
   const custServices = ['About us','Terms & Conditions','FAQ Privacy Policy','E-waste Policy','Cancellation & Return Policy']
   return ( 
