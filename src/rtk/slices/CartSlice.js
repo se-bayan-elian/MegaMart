@@ -31,11 +31,17 @@ const cartSlice = createSlice({
       let index = state.products.findIndex((el) => el.product.id === action.payload.id);
       state.products[index].quantity = action.payload.quantity
       state.products[index].price = state.products[index].quantity * state.products[index].product.price;
+    },
+    clearCart: (state ,action) => {
+      return {
+        products : [],
+        totalPrice : 0
+      };
     }
 
 
   }
 })
 
-export const { addToCart, removeFromCart, calculateElementPrice, editTotal } = cartSlice.actions;
+export const { addToCart, removeFromCart, calculateElementPrice, editTotal,clearCart } = cartSlice.actions;
 export default cartSlice.reducer;
