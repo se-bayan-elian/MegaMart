@@ -1,0 +1,116 @@
+.dark .navbar {
+  background-color: #001e3c !important;
+}
+.dark .navbar .input-container {
+  background-color: #001e3c !important;
+  border-color: #132f4c;
+}
+.dark .navbar .input-container:focus-within {
+  box-shadow: 0 0 3px 1px white;
+}
+.dark .navbar .input-container input {
+  color: #fff;
+}
+.dark .navbar .input-container input::-moz-placeholder {
+  color: rgba(0, 142, 204, 0.7);
+}
+.dark .navbar .input-container input::placeholder {
+  color: rgba(0, 142, 204, 0.7);
+}
+.dark .navbar .cart-icon-container > span {
+  color: #008ECC;
+}
+.dark .navbar .cart-icon-container > span span {
+  color: #008ECC !important;
+}
+.dark .navbar .MuiSwitch-thumb {
+  background-color: #008ECC;
+}
+.dark .categories-sec {
+  background-color: #0A1929;
+}
+.dark .categories-sec header p {
+  color: white;
+}
+.dark .footer-sec {
+  background-color: #001e3c;
+}
+.dark .products-sec {
+  background-color: #0A1929;
+}
+.dark .products-sec .product .card {
+  background-color: #001e3c;
+  color: #fff;
+}
+.dark .products-sec .tabs-sec li a {
+  background-color: #008ECC;
+  color: white;
+}
+.dark .products-sec .tabs-sec li a svg {
+  color: white;
+}
+.dark .products-sec .tabs-sec .select__control {
+  background-color: #001e3c;
+}
+.dark .products-sec .tabs-sec .select__control .select__placeholder {
+  color: #008ECC;
+}
+.dark .products-sec .tabs-sec .select__control .select__input-container, .dark .products-sec .tabs-sec .select__control .select__single-value {
+  color: white;
+}
+.dark .products-sec .tabs-sec .select__control .select__option {
+  background-color: #000 !important;
+}
+.dark .products-sec .tabs-sec .select__menu {
+  background-color: #001e3c;
+  z-index: 9999;
+  color: white;
+}
+.dark .products-sec .tabs-sec .select__menu div.select__option--is-focused {
+  background-color: #008ECC !important;
+  color: #fff;
+}
+.dark .product-details {
+  background-color: #0A1929;
+  color: white;
+}
+.dark .product-details li.active {
+  color: #f0f0f0;
+}
+.dark .cart {
+  background-color: #0A1929;
+}
+.dark .cart .carts-header {
+  background-color: #0A1929;
+  color: #fff;
+}
+.dark .cart .carts-header svg {
+  color: #fff;
+}
+.dark .cart .body {
+  background-color: #001e3c;
+}
+.dark .cart .body .cart-element {
+  color: #fff;
+  border-color: #008ECC;
+}
+.dark .cart .body .cart-element .quantity {
+  border-color: #008ECC !important;
+}
+.dark .cart .do-pay {
+  color: #fff;
+}
+.dark .swal2-modal {
+  background-color: #001e3c;
+  color: white;
+}
+.dark .swal2-modal .swal2-icon {
+  color: #008ECC;
+  border-color: #008ECC;
+}
+.dark .swal2-modal .swal2-html-container {
+  color: #ccc;
+}
+.dark .empty-cart {
+  color: #fff;
+}

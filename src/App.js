@@ -9,13 +9,23 @@ import React, { useEffect, useRef, useState } from 'react';
 import Cart from './components/Pages/prods/Cart';
 import ProductDetails from './components/Pages/prods/ProductDetail'
 import Products from './components/Pages/prods/Products.jsx'
+import ScrollToTop from './components/ScrollToTop';
+import SplashScreen from './components/SplashScreen';
 function App() {
+  const [isLoading, setLoading] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(true)
+    }, 2500)
+  },[])
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchProducts());
   }, []);
   return (
     <>
+    {!isLoading && <SplashScreen />}
+      <ScrollToTop></ScrollToTop>
       <Navbar />
       <Routes>
         <Route index path="/" element={<Home />} />
