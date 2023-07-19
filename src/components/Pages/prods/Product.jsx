@@ -2,10 +2,10 @@ import { Rating } from "@mui/material";
 import { useState } from "react";
 import { Button, Card, Placeholder } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import '../../../css/Product.css';
+import "../../../css/Product.css";
 import { useNavigate } from "react-router-dom/dist";
 const Product = (props) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="product d-flex justify-content">
       {props.loading ? (
@@ -26,7 +26,14 @@ const Product = (props) => {
               />
               <span>{props.product.rating}</span>
             </div>
-            <Link onClick={()=>navigate('/products/'+props.product.id)} className="btn btn-primary">More Details</Link>
+            <Link
+              onClick={(e) => {
+                e.preventDefault();
+                 navigate("/products/" + props.product.id)}}
+               className="btn btn-primary"
+            >
+              More Details
+            </Link>
           </Card.Body>
         </Card>
       ) : (

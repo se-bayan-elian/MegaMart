@@ -13,7 +13,9 @@ const Categories = () => {
       setTimeout(() => {
         setLoading(true);
       }, 1000);
+      
     });
+    console.log(categories)
   }, [dispatch]);
   return (
     <section className="categories-sec">

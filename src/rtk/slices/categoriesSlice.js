@@ -7,7 +7,8 @@ export const fetchCategories = createAsyncThunk(
     let data = {}
     await axios.get(apiUrl)
       .then(res => {
-        data = res.data
+        console.log(res)
+        data = res.data.categories
       })
     return data;
   }

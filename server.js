@@ -4,9 +4,6 @@ const fs = require('fs');
 
 const app = express();
 app.use(express.static(path.join(__dirname, './build')));
-app.get('', (req, res) => {
-  res.render('index')
-})
 app.get('/categories', (req, res) => {
   const filePath = path.join(__dirname, 'db.json');
 
@@ -20,6 +17,9 @@ app.get('/categories', (req, res) => {
     // Send the JSON data as the response
     res.send(jsonData);
   });
+})
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './build/index.html'))
 })
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
