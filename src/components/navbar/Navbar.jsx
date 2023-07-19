@@ -13,7 +13,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import "../../css/navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { cartRef } from "../Pages/Products/Cart";
+import { cartRef } from "../Pages/prods/Cart";
 import { styled, Switch, useTheme } from "@mui/material";
 import { changeTheme } from "../../rtk/slices/Themes";
 import { HiBars3 } from "react-icons/hi2";
