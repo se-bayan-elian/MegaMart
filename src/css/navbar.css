@@ -1,6 +1,8 @@
 .navbar {
-  background-color: #ffffff !important;
   box-shadow: 0px 2px 20px -15px #008ECC;
+}
+.navbar.fixed-top {
+  position: sticky !important;
 }
 .navbar .main-search-input {
   width: 30%;
@@ -31,36 +33,33 @@
   left: 8px;
   color: #008ECC;
 }
-
-.right {
+.navbar .btn {
+  box-shadow: 0 !important;
+  border: 1px solid #008ECC;
+  background-color: #008ECC;
+}
+.navbar .btn:hover {
+  background-color: #0271a1;
+}
+.navbar .right {
   display: flex;
   align-items: center;
 }
-.right .cart-icon-container {
+.navbar .right .cart-icon-container {
   margin-right: 15px;
   position: relative;
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.right .cart-icon-container svg {
+.navbar .right .cart-icon-container svg {
   font-size: 22px;
   color: #008ECC;
 }
-.right .cart-icon-container > span {
+.navbar .right .cart-icon-container > span {
   font-size: 16px;
 }
-.right .cart-icon-container > span span {
-  color: #008ECC;
-}
-
-.navbar-toggler {
-  border: 0;
-}
-.navbar-toggler:focus {
-  box-shadow: 0;
-}
-.navbar-toggler .navbar-toggler-icon {
+.navbar .right .cart-icon-container > span span {
   color: #008ECC;
 }
 
@@ -68,5 +67,26 @@
   .navbar .main-search-input {
     width: 100% !important;
     margin-bottom: 20px;
+  }
+  .navbar .main-search-input input {
+    width: 88% !important;
+  }
+  .navbar .main-search-input input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .navbar .main-search-input input::placeholder {
+    font-size: 14px;
+  }
+  .navbar .main-search-input svg {
+    margin-left: 5px;
+  }
+  .navbar .navbar-toggler {
+    border-color: #008ECC !important;
+  }
+  .navbar .navbar-toggler:focus {
+    box-shadow: 0;
+  }
+  .navbar .navbar-toggler svg {
+    color: #008ECC;
   }
 }

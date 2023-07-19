@@ -13,7 +13,7 @@
   z-index: 4;
 }
 .carousel .carousel-item {
-  height: calc(100vh - 41.8px);
+  height: calc(100vh - 66px);
   position: relative;
 }
 .carousel .carousel-item::after {
@@ -38,4 +38,45 @@
   height: 100%;
   text-decoration: none;
   color: white;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .carousel .carousel-item {
+    height: 50vh !important;
+  }
+  .carousel .carousel-item img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+  }
+  .carousel .carousel-control-prev span,
+  .carousel .carousel-control-next span {
+    display: block;
+    height: 15%;
+    width: 20px;
+    background-color: rgba(0, 142, 204, 0.1);
+  }
+  .carousel .carousel-caption a {
+    padding: 5px 0px !important;
+  }
+  .carousel .carousel-caption h1 {
+    font-size: 18px !important;
+  }
+  .carousel .carousel-caption p {
+    font-size: 14px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .carousel-item {
+    height: 90vh !important;
+  }
+  .carousel-item img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+  }
 }

@@ -1,5 +1,5 @@
 .product-details {
-  padding: 40px 0px;
+  padding: 36px 0px 40px;
 }
 .product-details .container {
   width: 75%;
@@ -67,6 +67,22 @@
 .product-details .inner .content .rating-info span {
   font-weight: bold;
 }
+.product-details .inner .content button {
+  border-color: #008ECC;
+  color: #008ECC;
+}
+.product-details .inner .content button:hover {
+  background-color: #008ECC;
+  color: #fff;
+}
+
+.breadCrumb {
+  margin-bottom: 20px;
+}
+.breadCrumb ol li a {
+  text-decoration: none;
+  color: #008ECC;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .product-details .container {
@@ -94,6 +110,9 @@
   }
 }
 @media (max-width: 767px) {
+  .product-details .breadCrumb ol li a, .product-details .breadCrumb ol li.active {
+    font-size: 14px !important;
+  }
   .product-details .imgs {
     flex-direction: column;
   }
